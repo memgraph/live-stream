@@ -1,0 +1,3 @@
+CREATE (pageA:Page {name: "Page A"}), (pageB:Page {name: "Page B"})
+CREATE (pageA)-[:LINK]->(pageB)
+CREATE (pageB)-[:LINK]->(pageA);

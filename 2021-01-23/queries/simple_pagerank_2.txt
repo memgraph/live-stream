@@ -1,0 +1,7 @@
+CREATE (pageA:Page {name: "Page A"}), (pageB:Page {name: "Page B"}),
+       (pageC:Page {name: "Page C"}), (pageD:Page {name: "Page D"})
+CREATE (pageA)-[:LINK]->(pageB)
+CREATE (pageA)-[:LINK]->(pageC)
+CREATE (pageB)-[:LINK]->(pageC)
+CREATE (pageC)-[:LINK]->(pageA)
+CREATE (pageD)-[:LINK]->(pageC);
